@@ -288,7 +288,7 @@ Anibal Robles | Coral Rembert | Ryan Carriere | Brian Ferrell | Boston Blue Bike
 
 <script>
 // set the dimensions and margins of the graph
-var margin = {top: 200, right: 30, bottom: 200, left: 60},
+var margin = {top: 200, right: 60, bottom: 200, left: 60},
   width = 1300 - margin.left - margin.right,
   height = 1200 - margin.top - margin.bottom;
 
@@ -372,7 +372,7 @@ d3.csv("https://raw.githubusercontent.com/crember1/FinalPresentation/main/201906
                 .text(function(d){ return(d.name)} )
                 .style("text-anchor", "end")
                 .attr("transform", function(d){ return( "translate(" + (x(d.name)) + "," + (height-15) + ")rotate(-45)")})
-                .style("font-size", 6)
+                .style("font-size", 10)
 
                 nodes
                   .on('mouseover', function (d) {

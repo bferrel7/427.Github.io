@@ -315,7 +315,7 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.csv("201906 - longest.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/crember1/FinalPresentation/main/201906%20-%20longest.csv", function(data) {
 
 
     var nodeNames = data.map(function(d){return d.name})
